@@ -6,8 +6,8 @@ El desafío consiste en la creación de una aplicación web interactiva para com
 
 ### Herramientas
 
-HTML
-CSS3
-JavaScript Vainilla
-Vercel
+HTML <br>
+CSS3 <br>
+JavaScript Vainilla <br>
+Vercel <br>
 
