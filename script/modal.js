@@ -6,14 +6,14 @@ let modal;
 /**Maximizar gifo mobile */
 function maxGifosMobile(img, id, slug, user, title) {
   if (window.matchMedia("(max-width: 899px)").matches) {
-    maxGifos(img, id, user, title);
+    maxGifos(img, id, slug, user, title);
   }
 }
 
 /**Maximizar gifo desktop */
 function maxGifosDesktop(img, id, slug, user, title) {
   if (window.matchMedia("(min-width: 900px)").matches) {
-    maxGifos(img, id, user, title);
+    maxGifos(img, id, slug, user, title);
   }
 }
 
