@@ -30,6 +30,7 @@
   z-index: 2;
   overflow: hidden;
   background-color: $main-color;
+  opacity: 80%;
 
   &__item {
     padding: $p-1;
@@ -61,61 +62,4 @@
     font-size: 1rem;
     color: $main-color;
   }
-}
-
-
-
-.burguer-menu .fa-bars {
-  position: absolute;
-  right: 30px;
-  top: 8%;
-  color: $main-color;
-}
-
-#checkbox:checked ~ .nav-menu {
-  margin-top: 300px;
-  height: 100%;
-}
-
-#checkbox:checked ~ .burguer-menu i::before {
-  content: "\f00d";
-  position: absolute;
-}
-
-.nav-menu {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  top: -200px;
-  transition: all 0.5s;
-  background-color: $main-color;
-  opacity: 90%;
-}
-
-.menu-list {
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-}
-
-.list-item {
-  text-align: start;
-  flex-grow: 1;
-  text-align: center;
-
-  &.list-item a {
-    display: block;
-    padding: 15px 20px;
-    text-decoration: none;
-    font-family: $title-font;
-    font-weight: bold;
-    color: #fff;
-  }
-}
-
-.list-line {
-  width: 41px;
-  height: 1px;
-  background-color: #fff;
-  margin: 0 auto;
 }

@@ -7,11 +7,14 @@
       src="https://kit.fontawesome.com/3bc7d78e54.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="styles/css/styles.css" />
-    <title>GIFOS</title>
+
+    <link rel="stylesheet" href="styles/scss/styles.css" />
+    <title>GIFOS by Jesica Velazquez</title>
   </head>
 
   <body id="body">
+    <!-- NAVBAR -->
+
     <header class="navbar" id="navbar">
       <a href="index.html">
         <img src="./assets/logo-mobile.svg" alt="logo" id="logo" class="logo" />
@@ -44,9 +47,12 @@
               ><img src="./assets/button-crear-gifo.svg" id="create_img" alt=""
             /></a>
           </li>
-        </ul> 
+        </ul>
       </nav>
     </header>
+
+    <!-- HERO -->
+
     <main class="main">
       <section class="hero" id="hero">
         <h1 class="main_title">
@@ -72,22 +78,24 @@
             </button>
           </div>
           <ul class="autocomplete_content" id="autocomplete_content">
-            <!-- Here searching suggested terms will be rendered -->
+            <!-- SECCION DONDE SE RENDERIZAN LOS TERMINOS SUGERIDOS -->
           </ul>
         </div>
         <h4 class="trending__title">Trending:</h4>
         <div class="trending__topics" id="trend_topics">
-          <!-- Here searching trends will be rendered -->
+          <!-- SECCION DONDE SE RENDERIZAN LOS TRENDING TOPICS -->
         </div>
       </section>
 
       <section class="results hide" id="results">
         <div class="section_line"></div>
         <h2 class="section_title" id="results_title">Resultado de búsqueda</h2>
-        <!-- Here searching result gifos will be rendered -->
+        <!-- SECCION DONDE SE RENDERIZAN LOS GIFOS -->
         <div class="section_grifos grid" id="results_grid"></div>
         <a href="#" class="btn" id="more_btn">Ver más</a>
       </section>
+
+      <!-- SECCION FAVORITOS -->
 
       <section class="favorites hide" id="favorites">
         <img
@@ -97,7 +105,7 @@
         />
         <h2 class="section_title">Favoritos</h2>
         <div class="section_grifos grid" id="fav_gifos">
-          <!-- Here favorite gifos will be rendered -->
+          <!-- SECCION DONDE SE RENDERIZAN LOS GIFOS FAVORITOS -->
         </div>
       </section>
 
@@ -109,7 +117,7 @@
         />
         <h2 class="section_title">Mis GIFOS</h2>
         <div class="section_grifos grid" id="my_gifos_gifos">
-          <!-- Here user gifos will be rendered -->
+          <!-- SECCION DONDE SE RENDERIZAN MIS GIFOS -->
         </div>
       </section>
 
@@ -119,17 +127,21 @@
           Mira los últimos <span class="break"></span> GIFOS de nuestra
           comunidad.
         </p>
+
+        <!-- SLIDER TRENDING GIFOS  -->
         <div class="trending_slider">
           <a class="prev" id="prev">&#10094;</a>
 
           <div class="trendslider" id="trendslider">
-            <!-- Here trending gifos will be rendered -->
+            <!-- SECCION DONDE SE RENDERIZAN LOS TRENDING GIFOS-->
             <div class="trendslider__slider" id="slider"></div>
           </div>
 
           <a class="next" id="next">&#10095;</a>
         </div>
       </section>
+
+      <!-- CREAR GIFO -->
 
       <section class="create hide" id="create">
         <div class="create__layout">
@@ -233,8 +245,8 @@
       <div class="small_text">© GIFOS 2020 — All Rights Reserved</div>
     </footer>
 
-    <!-- Script Links -->
-    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <!-- CUSTOM SCRIPTS-->
+
     <script src="./script/main.js"></script>
     <script src="./script/trending.js"></script>
     <script src="./script/search.js"></script>
