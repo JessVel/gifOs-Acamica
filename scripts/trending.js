@@ -1,6 +1,6 @@
 //Variables
 const api_key = "eyRxfhyq7dyHJXfqhaaBX0xX8ehcicw8";
-const url_trending = `https://api.giphy.com/v1/gifs/trending?api_key=${api_key}&limit=10`;
+const url_trending = `https://api.giphy.com/v1/gifs/trending?api_key=${api_key}&limit=100`;
 const slider = document.getElementById("slider");
 const icon_search = "./assets/icon-busqueda-sin-resultado.svg";
 const results_grid = document.getElementById("results_grid");
