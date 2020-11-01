@@ -1,9 +1,9 @@
 /**Variables */
-myGifosArray = [];
-myGifosString = localStorage.getItem("myGifos");
 const my_gifos_gifos = document.getElementById("my_gifos_gifos");
 const my_gifos_icon = "./assets/icon-mis-gifos-sin-contenido.svg";
 const trash_img = "./assets/icon-trash-hover.svg";
+myGifosArray = [];
+myGifosString = localStorage.getItem("myGifos");
 
 /**Renderiza gifos */
 renderMyGifos();

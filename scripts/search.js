@@ -12,7 +12,7 @@ let value = "";
 
 //Obtener datos de la API de giphy
 function searchGifos() {
-  event.preventDefault();
+  e.preventDefault();
   results_grid.innerHTML = "";
   value = search_input.value.trim();
   results.classList.remove("hide");
