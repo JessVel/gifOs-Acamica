@@ -23,11 +23,16 @@ function searchGifos() {
   closeAutocompleteSection();
 }
 
-//Autocompletar sugerencias
+//Autocompletar sugerencias y buscar gifos con enter event
 
-search_input.addEventListener("keyup", () => {
+search_input.addEventListener("keyup", (e) => {
+  if (e.keyCode === 13) {
+    e.preventDefault();
+    searchGifos();
+    console.log("buscando con enter");
+  }
+
   value = search_input.value;
-
   if (value.length >= 1) {
     showAutocompleteSection();
     fetch(`${url_suggestions}${value}?api_key=${api_key}`)
@@ -83,12 +88,8 @@ right_btn.addEventListener("click", (e) => {
   closeAutocompleteSection();
 });
 
+//Buscar gifos con click event
 search_btn.addEventListener("click", searchGifos);
-search_input.addEventListener("keyup", (e) => {
-  if (e.code === 13) {
-    searchGifos();
-  }
-});
 
 //Ver mas resultados
 more_btn.addEventListener("click", (e) => {
