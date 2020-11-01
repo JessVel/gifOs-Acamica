@@ -18,7 +18,6 @@ document.addEventListener("scroll", debounce(storeScroll), { passive: true });
 storeScroll();
 
 /**Cambio de img en navbar cuando se hace hover */
-//Variable
 const create_img = document.getElementById("create_img");
 
 create_img.addEventListener("mouseover", () => {

@@ -30,10 +30,10 @@ const next_btn = document.getElementById("next");
 
 prev_btn.addEventListener("click", (e) => {
   e.preventDefault();
-  trendslider.scrollLeft -= 300;
+  trendslider.scrollLeft -= 500;
 });
 
 next_btn.addEventListener("click", (e) => {
   e.preventDefault();
-  trendslider.scrollLeft += 300;
+  trendslider.scrollLeft += 500;
 });

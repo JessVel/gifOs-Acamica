@@ -86,7 +86,7 @@ right_btn.addEventListener("click", (e) => {
 
 search_btn.addEventListener("click", searchGifos);
 search_input.addEventListener("keyup", (e) => {
-  if (e.keyCode === 13) {
+  if (e.code === 13) {
     searchGifos();
   }
 });
@@ -127,9 +127,9 @@ function trendingTopics() {
             <p class="trending__links">${topics[4]}</p>`;
 
       let topic_btns = document.getElementsByClassName("trending__links");
-      for (let x = 0; x < topic_btns.length; x++) {
-        topic_btns[x].addEventListener("click", function (e) {
-          search_input.value = topics[x];
+      for (let i = 0; i < topic_btns.length; i++) {
+        topic_btns[i].addEventListener("click", function (e) {
+          search_input.value = topics[i];
           searchGifos();
         });
       }

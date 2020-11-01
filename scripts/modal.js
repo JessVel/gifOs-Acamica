@@ -4,25 +4,25 @@ const download_btn = document.querySelectorAll(".download_btn");
 let modal;
 
 /**Maximizar gifo mobile */
-function maxGifosMobile(img, id, slug, user, title) {
+function fullGifosMobile(img, id, slug, user, title) {
   if (window.matchMedia("(max-width: 899px)").matches) {
-    maxGifos(img, id, slug, user, title);
+    fullGifos(img, id, slug, user, title);
   }
 }
 
 /**Maximizar gifo desktop */
-function maxGifosDesktop(img, id, slug, user, title) {
+function fullGifosDesktop(img, id, slug, user, title) {
   if (window.matchMedia("(min-width: 900px)").matches) {
-    maxGifos(img, id, slug, user, title);
+    fullGifos(img, id, slug, user, title);
   }
 }
 
-function maxGifos(img, id, slug, user, title) {
+function fullGifos(img, id, slug, user, title) {
   modal = document.createElement("div");
   modal.classList.add("modal");
   modal.innerHTML = ` 
     <div class="modal__container">
-            <button class="close_modal_btn" onclick="closeMaxGifos()"><i class="fas fa-times"></i></button>
+            <button class="close_modal_btn" onclick="closefullGifos()"><i class="fas fa-times"></i></button>
             <img src="${img}" alt="${id}" class="modal__img">
             <div class="modal__info">
                 <div class="modal__text">
@@ -40,6 +40,6 @@ function maxGifos(img, id, slug, user, title) {
 }
 
 /**Cerrar gifo */
-function closeMaxGifos() {
+function closefullGifos() {
   document.body.removeChild(modal);
 }

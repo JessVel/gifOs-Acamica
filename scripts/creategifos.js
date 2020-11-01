@@ -99,8 +99,8 @@ function endingGifo() {
 
   recorder.stopRecording(function () {
     /**Callback */
-    video.classList.add("hide"); 
-    recorded_gifo.classList.remove("hide"); 
+    video.classList.add("hide");
+    recorded_gifo.classList.remove("hide");
 
     /*Manejar info recibida**/
     blob = recorder.getBlob();
@@ -173,9 +173,7 @@ function uploadGifo() {
       myGifosString = JSON.stringify(myGifosArray);
       localStorage.setItem("myGifos", myGifosString);
     })
-    .catch((error) =>
-      console.log(error)
-    );
+    .catch((error) => console.log(error));
 }
 
 /**Repetir grabación**/
