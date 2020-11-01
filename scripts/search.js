@@ -26,7 +26,7 @@ function searchGifos() {
 //Autocompletar sugerencias y buscar gifos con enter event
 
 search_input.addEventListener("keyup", (e) => {
-  if (e.keyCode === 13) {
+  if (e.key === "Enter") {
     e.preventDefault();
     searchGifos();
     console.log("buscando con enter");
