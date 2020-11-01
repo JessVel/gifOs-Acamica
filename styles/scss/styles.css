@@ -787,53 +787,50 @@ input {
   position: relative;
 }
 
-.box1{
+.box1 {
   position: absolute;
-    border-left: 1px solid #50E3C2;
-    border-top: 1px solid #50E3C2;
-    left: 0;
-    top: 0;
-    height: 25px;
-    width: 27px;
-    margin: 15px;
+  border-left: 1px solid #50e3c2;
+  border-top: 1px solid #50e3c2;
+  left: 0;
+  top: 0;
+  height: 25px;
+  width: 27px;
+  margin: 15px;
 }
 
-.box2{
+.box2 {
   position: absolute;
-    border-right: 1px solid #50E3C2;
-    border-top: 1px solid #50E3C2;
-    right: 0;
-    top: 0;
-    height: 25px;
-    width: 27px;
-    margin: 15px;
+  border-right: 1px solid #50e3c2;
+  border-top: 1px solid #50e3c2;
+  right: 0;
+  top: 0;
+  height: 25px;
+  width: 27px;
+  margin: 15px;
 }
 
- .box3{
+.box3 {
   position: absolute;
-    border-left: 1px solid #50E3C2;
-    border-bottom: 1px solid #50E3C2;
-    left: 0;
-    bottom: 0;
-    height: 25px;
-    width: 27px;
-    margin: 15px;
-} 
+  border-left: 1px solid #50e3c2;
+  border-bottom: 1px solid #50e3c2;
+  left: 0;
+  bottom: 0;
+  height: 25px;
+  width: 27px;
+  margin: 15px;
+}
 
-.box4{
+.box4 {
   position: absolute;
-    border-right: 1px solid #50E3C2;
-    border-bottom: 1px solid #50E3C2;
-    right: 0;
-    bottom: 0;
-    height: 25px;
-    width: 27px;
-    margin: 15px;
-} */
-
-
-
-.upload__gifo {
+  border-right: 1px solid #50e3c2;
+  border-bottom: 1px solid #50e3c2;
+  right: 0;
+  bottom: 0;
+  height: 25px;
+  width: 27px;
+  margin: 15px;
+}
+*/ .upload__gifo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1308,13 +1305,6 @@ input {
   .button:hover {
     background-color: #572ee5;
     color: #ffffff;
-  }
-
-  html:not([data-scroll="0"]) .navbar {
-    -webkit-box-shadow: 0 2px 4px 1px rgba(156, 175, 195, 0.55);
-    box-shadow: 0 2px 4px 1px rgba(156, 175, 195, 0.55);
-    -webkit-transition: opacity 0.5s 0.5s ease;
-    transition: opacity 0.5s 0.5s ease;
   }
 
   .menu {
