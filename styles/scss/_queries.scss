@@ -1,5 +1,5 @@
 /*TABLET*/
-@import '_base.scss';
+@import "_base.scss";
 @media (min-width: 768px) {
   .burger {
     display: none;
@@ -15,7 +15,6 @@
     width: $logo-desk-size;
   }
 
- 
   .menu {
     @include flexbox(row, space-between);
     visibility: visible;
@@ -129,12 +128,12 @@
     }
   }
 
-  html:not([data-scroll="0"]) {
-    .navbar {
-      box-shadow: 0 2px 4px 1px rgba(156, 175, 195, 0.55);
-      transition: opacity 0.5s 0.5s ease;
-    }
-  }
+  // html:not([data-scroll="0"]) {
+  //   .navbar {
+  //     box-shadow: 0 2px 4px 1px rgba(156, 175, 195, 0.55);
+  //     transition: opacity 0.5s 0.5s ease;
+  //   }
+  // }
 
   .menu {
     padding: 0;
