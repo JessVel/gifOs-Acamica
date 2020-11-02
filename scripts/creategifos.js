@@ -146,9 +146,7 @@ function uploadGifo() {
       return response.json();
     })
     .then((gifo) => {
-      console.log(gifo);
       let myGifoId = gifo.data.id;
-      console.log(myGifoId);
 
       /**Mostrar nuevo gifo */
       overlay_actions.classList.remove("hide");

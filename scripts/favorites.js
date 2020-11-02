@@ -35,7 +35,6 @@ function renderFavorites() {
     );
   } else {
     favoriteArray = JSON.parse(favoriteString);
-    console.log(favoriteArray);
     let urlFavorites = `https://api.giphy.com/v1/gifs?ids=${favoriteArray.toString()}&api_key=${api_key}`;
     getSectionsData(urlFavorites, fav_gifos, fav_act_img, fav_remove, fav);
   }

@@ -79,7 +79,6 @@ function getSectionsData(url, container, favButton, favFunction, type) {
   fetch(url)
     .then((response) => response.json())
     .then((content) => {
-      console.log(content);
       renderAllGifos(content, container, favButton, favFunction, type);
     })
     .catch((error) => console.log(error));
@@ -106,7 +105,6 @@ function getTrendingData(url, container, favButton, favFunction, type) {
   fetch(url)
     .then((response) => response.json())
     .then((content) => {
-      console.log(content);
       renderTrendingGifos(content, container, favButton, favFunction, type);
     })
     .catch((error) => console.log(error));

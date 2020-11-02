@@ -18,7 +18,6 @@ function searchGifos() {
   results_title.textContent = value;
 
   const search = url_search + "&limit=12&q=" + value + "/";
-  console.log(search);
   getSectionsData(search, results_grid, fav_img, fav_add, fav);
   closeAutocompleteSection();
 }
@@ -38,7 +37,6 @@ search_input.addEventListener("keyup", (e) => {
     fetch(`${url_suggestions}${value}?api_key=${api_key}`)
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         suggestedTerms(data);
       })
       .catch((err) => {
@@ -117,7 +115,6 @@ function trendingTopics() {
   return fetch(url)
     .then((resp) => resp.json())
     .then((gifoWords) => {
-      console.log(gifoWords);
       let topics = gifoWords.data;
       trend_topics.innerHTML = `
             <p class="trending__links">${topics[0]}</p>, 
